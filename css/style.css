@@ -1,0 +1,145 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* Basic Page Styling */
+html, body {
+  font-family: "system";
+  height: 100%;
+  color: #666;
+  background: #e5e5e5;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+  opacity: .6;
+}
+
+/* Overriding Bootstrap Button Styles */
+.btn-outline-primary {
+  color: #49c5ff;
+  font-weight: 600;
+  border-color: #49c5ff;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open > .dropdown-toggle.btn-outline-primary {
+  background: #49c5ff;
+  border-color: #49c5ff;
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(#77c9d4 , #57bc90);
+  color: #fff;
+}
+.header .social {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.header .social a {
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.header .action {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Sticky Navbar */
+.sticky.is-sticky {
+  background: linear-gradient(150deg,#77c9d4 , #57bc90);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Section Styling */
+.section {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 45px;
+  background: #fff;
+  margin-bottom: 45px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* Timeline Styling */
+.timeline {
+  border-left: 3px solid #57bc90;
+  border-radius: 2px;
+  position: relative;
+  padding: 0 30px;
+  margin-left: 220px;
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 45px;
+}
+.timeline .item:last-child {
+  margin-bottom: 0;
+}
+.timeline .item:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #57bc90;
+}
+.timeline .item:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #57bc90;
+  z-index: 10;
+}
+.timeline .job-title {
+  position: absolute;
+  left: -250px;
+  top: 0;
+}
